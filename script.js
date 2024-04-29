@@ -4,7 +4,6 @@ let mainContainer = document.querySelector(".txt");
 
 let predictGender = async () => {
   let genterAvatar = document.getElementById("genderAvatar");
-  let genterLogo = document.getElementById("genderLogo");
   let usrInput = document.getElementById("input").value;
   let fetchdata = await fetch(apiUrl + usrInput);
   let data = await fetchdata.json();
@@ -16,10 +15,8 @@ let predictGender = async () => {
   `;
 
     if (data.gender == "male") {
-      genterLogo.src = "./img/boy.webp";
       genterAvatar.src = "./img/boy-avatar.png";
     }else{
-      genterLogo.src = "./img/girl.webp";
       genterAvatar.src = "./img/girl-avatar.jpg";
     }
   } else {
