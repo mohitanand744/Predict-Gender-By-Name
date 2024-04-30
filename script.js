@@ -10,13 +10,13 @@ let predictGender = async () => {
 
   if (usrInput.length != 0) {
     mainContainer.innerHTML = `
-  <h2>${data.name}</h2>
-  <h2>${data.gender}</h2>
+  <h2>Name: ${data.name}</h2>
+  <h2>Gender: ${data.gender}</h2>
   `;
 
     if (data.gender == "male") {
       genterAvatar.src = "./img/boy-avatar.png";
-    }else{
+    } else {
       genterAvatar.src = "./img/girl-avatar.jpg";
     }
   } else {

@@ -30,7 +30,7 @@ body {
   width: 100%;
   max-width: 60%;
   height: 67vh;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   border-radius: 5rem;
   -webkit-border-radius: 5rem;
   -moz-border-radius: 5rem;
@@ -142,7 +142,8 @@ body {
       }
       & .txt {
         display: flex;
-        gap: 3rem;
+        flex-direction: column;
+        gap: 1.5rem;
       }
     }
   }
@@ -165,7 +166,7 @@ body {
     flex-direction: column;
   }
   .container {
-    height: 95vh;
+    height: max-content;
     & .details {
       & .detailed-container {
         flex-direction: column;
