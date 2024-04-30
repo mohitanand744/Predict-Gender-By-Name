@@ -139,6 +139,7 @@ body {
       justify-content: space-evenly;
       & h2 {
         font-size: 4rem;
+        text-transform: capitalize;
       }
       & .txt {
         display: flex;
